@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.main-box {
+    display: flex;
+    flex-direction: row;
+}
+.menu-box {
+    width: 200px;
+}
+.content-box {
+    flex: 1;
+}
+.link-active {
+    background-color: #ccccdc;
+    color: #fff;
+    text-decoration: none;
+}
