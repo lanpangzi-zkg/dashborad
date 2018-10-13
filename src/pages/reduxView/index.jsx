@@ -7,11 +7,15 @@ import Reducers from './reducers';
 
 export default () => {
     return (
-        <Provider store={createStore(combineReducers(Reducers))}>
+        /* eslint-disable no-underscore-dangle */
+        <Provider store={createStore(combineReducers(Reducers),
+            window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())}
+        >
             <div>
                 <Counter />
                 <VisibleToggle />
             </div>
         </Provider>
+        /* eslint-enable */
     );
 };

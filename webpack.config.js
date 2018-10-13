@@ -47,7 +47,7 @@ module.exports = {
         new CleanWebpackPlugin(['dist']),
         new HtmlWebpackPlugin({
             title: 'haha',
-            template: './src/index.html',
+            template: './src/static/template/index.html',
         }),
         new webpack.HotModuleReplacementPlugin(),
         new BundleAnalyzerPlugin({

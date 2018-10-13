@@ -1,7 +1,7 @@
 import React from 'react';
-import AppRoute from './route';
-import Menu from './component/Menu';
-import './static/style/common.css';
+import AppRoute from '../route';
+import Menu from '../component/Menu';
+import '../static/style/common.css';
 
 export default () => {
     return (

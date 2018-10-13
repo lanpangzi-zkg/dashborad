@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "sideEffects": [
-    "*.css", "*.scss", "*.sass"
+    "*.css",
+    "*.scss",
+    "*.sass"
   ],
   "scripts": {
     "build": "webpack --mode=production",
@@ -38,6 +40,7 @@
     "webpack-dev-server": "^3.1.5"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "history": "^4.7.2",
     "prop-types": "^15.6.2",
     "react": "^16.4.2",

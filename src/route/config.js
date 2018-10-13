@@ -4,6 +4,7 @@ import Loading from '../component/Loading';
 export default [{
     exact: true,
     path: '/',
+    menuName: 'home',
     component: Loadable({
         loader: () => {
             return import('../pages/home/Hello');
@@ -12,6 +13,7 @@ export default [{
     }),
 }, {
     path: '/one',
+    menuName: 'one',
     component: Loadable({
         loader: () => {
             return import('../pages/one');
@@ -20,6 +22,7 @@ export default [{
     }),
 }, {
     path: '/children',
+    menuName: 'children',
     component: Loadable({
         loader: () => {
             return import('../pages/children');
@@ -28,6 +31,7 @@ export default [{
     }),
 }, {
     path: '/dataFlow',
+    menuName: 'dataFlow',
     component: Loadable({
         loader: () => {
             return import('../pages/dataFlow');
@@ -36,6 +40,7 @@ export default [{
     }),
 }, {
     path: '/redux',
+    menuName: 'redux',
     component: Loadable({
         loader: () => {
             return import('../pages/reduxView');
@@ -44,6 +49,7 @@ export default [{
     }),
 }, {
     path: '/context',
+    menuName: 'context',
     component: Loadable({
         loader: () => {
             return import('../pages/context');
@@ -52,6 +58,7 @@ export default [{
     }),
 }, {
     path: '/importTest',
+    menuName: 'importTest',
     component: Loadable({
         loader: () => {
             return import('../pages/importTest');
@@ -60,9 +67,19 @@ export default [{
     }),
 }, {
     path: '/styledComponent',
+    menuName: 'styledComponent',
     component: Loadable({
         loader: () => {
             return import('../pages/styledComponent');
+        },
+        loading: Loading,
+    }),
+}, {
+    path: '/gitHubApi',
+    menuName: 'gitHubApi',
+    component: Loadable({
+        loader: () => {
+            return import('../pages/gitHubApi');
         },
         loading: Loading,
     }),
