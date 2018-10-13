@@ -38,3 +38,5 @@ Index.propTypes = {
 Index.defaultProps = {
     match: {},
 };
+
+export default Index;

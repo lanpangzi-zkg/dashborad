@@ -21,3 +21,5 @@ NewsList.defaultProps = {
     children: () => {},
     list: [],
 };
+
+export default NewsList;

@@ -6,7 +6,7 @@ const LevelTwo = (props, context) => {
     return (
         <div>
             {
-                get('title')
+                get.call(context, 'title')
             }
         </div>
     );

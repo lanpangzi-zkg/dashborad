@@ -18,3 +18,5 @@ Main.defaultProps = {
     children: {},
     title: 'aaa',
 };
+
+export default Main;
