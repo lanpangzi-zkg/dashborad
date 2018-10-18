@@ -22,7 +22,7 @@ class Remote {
             // if (status === 200) {
 
             // }
-            response.path = path;
+            response.type = path;
             return response;
         });
     }

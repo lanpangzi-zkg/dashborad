@@ -5,9 +5,18 @@ export default class GitHubApiFlow extends BaseFlow {
         return 'gitHubApi';
     }
 
-    queryApi(path, param) {
-        return this.httpGet(path, param).then((response) => {
-            this.dispatch(response.data);
+    addCount(count) {
+        this.dispatch({
+            count,
+            type: 'addCount',
+        });
+    }
+
+    queryApi(param = {}) {
+        return this.httpGet('/', param).then((response) => {
+            this.dispatch({
+                apiData: response.data,
+            });
             return response;
         });
     }

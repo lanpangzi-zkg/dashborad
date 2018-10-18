@@ -17,11 +17,11 @@ class BaseFlow {
 
     dispatch(props) {
         if (typeof this.dispatcher === 'function') {
-            const { path = '/' } = props;
+            const { type = '/' } = props;
             const payload = Object.assign({}, props, { viewKey: this.getKey() });
             delete payload.path;
             this.dispatcher({
-                type: `${this.getKey()}-${path}`,
+                type: `${this.getKey()}-${type}`,
                 payload,
             });
         }
